@@ -3,6 +3,22 @@ import { truncateStr } from "./utils/truncateStr";
 import { Link } from "react-router-dom";
 
 const Navbar = ({ }) => {
+  const connectMetaMask = () => {
+    if (window.ethereum) {
+      window.ethereum.request({ method: 'eth_requestAccounts' })
+        .then(accounts => {
+          console.log('Connected MetaMask account:', accounts[0]);
+          // Do something with the connected account, such as storing it in state
+          // For example, setConnectedAccount(accounts[0]);
+        })
+        .catch(error => {
+          console.error('MetaMask connection error:', error);
+        });
+    } else {
+      console.error('MetaMask not found. Please install MetaMask extension.');
+    }
+  };
+
   const [toggleValue, setToggle] = useState(false);
 
   const navRef = useRef(null);
@@ -53,6 +69,10 @@ const Navbar = ({ }) => {
         <Link to="/" className="text-lg font-semibold transition-transform duration-450 hover:transform hover:scale-105">Home</Link>
         <Link to="create-contest " className="text-lg font-semibold transition-transform duration-450 hover:transform hover:scale-105">Create Contest</Link>
         <Link to="contests" className="text-lg font-semibold transition-transform duration-450 hover:transform hover:scale-105">Contests</Link>
+        <button
+          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+          onClick={connectMetaMask}
+        >Connect</button>
        
     
         </div>
