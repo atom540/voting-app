@@ -6,6 +6,7 @@ import { Route, Routes } from "react-router-dom";
 import { toastError, toastSuccess } from "./component/utils/toastWrapper";
 import Home from './pages/Home';
 import CreateContest from './pages/CreateContest';
+import Voting from './pages/Voting';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
     <Routes>
         <Route path="/" element={<Home />} />
         <Route path="create-contest" element={<CreateContest/>} />
+        <Route path="Voting" element={<Voting/>} />
         </Routes>
    </div>
   );

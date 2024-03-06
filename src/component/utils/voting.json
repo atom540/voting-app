@@ -1,0 +1,47 @@
+{
+    "candidates": [
+      {
+        "name": "Candidate A",
+        "logo": "https://example.com/candidateA_logo.png"
+      },
+      {
+        "name": "Candidate B",
+        "logo": "https://example.com/candidateB_logo.png"
+      },
+      {
+        "name": "Candidate C",
+        "logo": "https://example.com/candidateC_logo.png"
+      }
+    ],
+    "voting": [
+      {
+        "voter_id": 1,
+        "candidate": {
+          "name": "Candidate A",
+          "logo": "https://example.com/candidateA_logo.png"
+        }
+      },
+      {
+        "voter_id": 2,
+        "candidate": {
+          "name": "Candidate B",
+          "logo": "https://example.com/candidateB_logo.png"
+        }
+      },
+      {
+        "voter_id": 3,
+        "candidate": {
+          "name": "Candidate A",
+          "logo": "https://example.com/candidateA_logo.png"
+        }
+      },
+      {
+        "voter_id": 4,
+        "candidate": {
+          "name": "Candidate C",
+          "logo": "https://example.com/candidateC_logo.png"
+        }
+      }
+    ]
+  }
+  

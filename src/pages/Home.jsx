@@ -9,8 +9,6 @@ const Home = () => {
         <h1 className=" text-center animate-charcter max-md:text-2xl">Welcome to dVote</h1>
         <h3 className="text-center max-md:text-xl">Decentralized Blockchain Based Voting Platform</h3>
       </div>
-
-
       <div className="p-8 pb-0">
         <div className="flex justify-center pt-4 items-center">
           <Link to="create-contest" className="text-lg font-semibold transition-transform duration-450 hover:transform hover:scale-105">
@@ -35,10 +33,7 @@ const Home = () => {
       
       </div>
 
-      {/* go to all contests button */}
-
-
-      {/* footer */}
+    
       <div className="pt-9">
         <div className="flex-col justify-center">
          
